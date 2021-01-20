@@ -1,7 +1,11 @@
 # OMCmf_code_release
 The release version of  OMCmf code for paper "One-pass Multi-view Clustering with Matrix Factorization"
 
-For testing the code, please visit 'https://lms.comp.nus.edu.sg/wp-content/uploads/2019/research/nuswide/NUS-WIDE.html' to download the NUS-WIDE-OBJECT datasets. 
-We directly adopt the released feature matrices.
+For testing the code, please visit the following websites to download datasets.
 
-If there's any problem, please contact me: liujiyuan13@nudt.edu.cn.
+HandWritten: https://archive.ics.uci.edu/ml/datasets/Multiple+Features/
+SUNRGBD: http://rgbd.cs.princeton.edu/
+NUS-WIDE: https://lms.comp.nus.edu.sg/wp-content/uploads/2019/research/nuswide/NUS-WIDE.html
+AwA: https://cvml.ist.ac.at/AwA/
+YoutubeFace: http://archive.ics.uci.edu/ml/datasets/YouTube+Multiview+Video+Games+Dataset
+
