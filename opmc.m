@@ -1,4 +1,4 @@
-function [ Y, C, W, beta, obj] = omcmf( X, k)
+function [ Y, C, W, beta, obj] = opmc( X, k)
 %OBJ \min \sum_{v=1}^V ( \|\mathbf{X}_v -
 %\mathbf{Y}\mathbf{C}_v\mathbf{W}_v\|_F^2
 % s.t. W_vW_v^T = I
