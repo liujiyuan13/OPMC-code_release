@@ -1,7 +1,7 @@
 clc
 clear
 
-prefix = 'D:/Work/OPMC-code/';
+prefix = 'D:/Work/OPMC-code_release/';
 data_path = 'D:/Work/datasets/mData/Fmatrix/';
 
 addpath(genpath([prefix, 'eval/']));
@@ -32,18 +32,19 @@ for iter=1:iters
     val = my_eval_y(Y, gt);
     loss = obj(end);
     save([prefix, 'res/', data_name, '_OPMC_res_', num2str(iter), '.mat'], 'data_name', 'Y', 'C', 'W', 'beta', 'val', 'obj', 'ts', 'loss');
+    fprintf('\niter: %d, time: %.2f', iter, ts);
 end
 
 % get res (corresponding to the minimal loss)
-vals = cell(len_iters, 1);
-tses = zeros(len_iters, 1);
-losses = zeros(len_iters, 1);
+vals = cell(iters, 1);
+tses = zeros(iters, 1);
+losses = zeros(iters, 1);
 
 for iter=1:iters
     load([prefix, 'res/', data_name, '_OPMC_res_', num2str(iter), '.mat'])
-    vals{it} = val';
-    tses(it) = ts;
-    losses(it) = loss;
+    vals{iter} = val';
+    tses(iter) = ts;
+    losses(iter) = loss;
 end
 
 [~, ind] = min(losses);
