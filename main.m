@@ -35,7 +35,7 @@ for iter=1:iters
     fprintf('\niter: %d, time: %.2f', iter, ts);
 end
 
-% get res (corresponding to the minimal loss)
+% get res (corresponding to the minimal loss) 
 vals = cell(iters, 1);
 tses = zeros(iters, 1);
 losses = zeros(iters, 1);
